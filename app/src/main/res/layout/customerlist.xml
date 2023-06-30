@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/customerAddress"
+                    android:text="Customer Name"
+                    android:textSize="15sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
